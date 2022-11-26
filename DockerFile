@@ -1,0 +1,5 @@
+FROM openjdk
+WORKDIR /application 
+COPY reham.java .
+RUN javac reham.java
+CMD java ahmed
