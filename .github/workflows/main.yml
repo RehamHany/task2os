@@ -16,4 +16,4 @@ jobs:
       - name: "testing"
         run: pwd
      - name: "testing"
-        run: echo ahmed
+        run: ls
