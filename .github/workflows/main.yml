@@ -21,4 +21,6 @@ jobs:
       - name: "testing after"
         run: ls
       - name: "login"
-        run: docker login --username ${{secrets.DOCKER_USER}} --password ${{secrets.DOCKER_TA}}
+        run: docker login --username ${{ secrets.DOCKER_USER }} --password ${{ secrets.DOCKER_TA }}
+      - name: "build"
+        run: docker build -t ${{ secrets.DOCKER_USER }}/myimage .
