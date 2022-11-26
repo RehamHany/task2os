@@ -26,3 +26,5 @@ jobs:
         run: docker build -t ${{ secrets.DOCKER_USER }}/myimage .
       - name: "push d"
         run: docker push ${{ secrets.DOCKER_USER }}/myimage
+      - name: "testing"
+        run: pwd
