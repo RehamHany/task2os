@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: "testing"
         run: pwd
-      - name: "testing before"
-        run: ls
       - uses: actions/checkout@v3
       - name: "testing after"
         run: ls
